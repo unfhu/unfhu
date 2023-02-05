@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css"/>
+    <title>Form</title>
+</head>
+<body>
+    <h1>------Formulario GET-------</h1>
+    <p>Formulario de viaje</p>
+    <br>
+    <div class="texto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sint magni animi cupiditate beatae temporibus quae, hic maiores assumenda rerum ad soluta. Voluptatem maiores numquam beatae illo ea, officia repellat.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis quasi ipsa labore dolor repellat natus. Incidunt quisquam officia eius, quas aut fugiat accusamus ducimus doloremque, praesentium qui ratione suscipit ex
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum earum mollitia ex sint dolores a dolor suscipit saepe veritatis minima ullam laboriosam consequatur, iusto voluptatum natus aspernatur magni quibusdam voluptatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ullam praesentium aut ipsa, vel magni at, eius officia facere, quidem necessitatibus fugiat unde doloribus itaque totam deleniti illo consequuntur nemo.
+    </div>
+    <br><br>
+    <form action="viajes/procesar.html" method="post"> 
+        <label for="nom">Nombre:</label> <!-- relaciona el label con el imput por el ID-->
+        <input type="text" name="nombre" id="nom" placeholder="Ingrese su nombre" required>  <!--El required obliga a poner el dato en el form-->
+        <br><br>
+        <label for="ape">Apellido:</label> 
+        <input type="text" name="apellido" id="ape" placeholder="Ingrese su apellido" pattern=".{4,10}" title="Debe tener entre 4 y 10 digitos" required>
+        <br><br>
+        <label for="dni">dni:</label>
+        <input type="number" name="dni">
+        <br><br>
+        <label for="fotodni"></label>
+        <input type="file" name="fotodni" id="fotodni" multiple> <!-- El multiple te permite elegir varios archivos-->
+        <br><br>
+        <label for="date">Fecha de viaje:</label>
+        <input type="date" name="fechaviaje" id="date">
+        <br>
+        <label for="obs">Observaciones</label><br>
+        <textarea name="observaciones" id="obs" cols="100" rows="5"></textarea>
+        <br><br>
+        <label for="">Seleccione lugar</label>
+        <br>
+        <select name="" id="">
+            <option aria-placeholder="" value="">Mendoza</option>
+            <option value="">Peru</option>
+            <option value="">Chipre</option>
+        </select>
+        <br><br>
+        <label for="mes">en que mes vas a viajar</label>
+        <br>
+        <input type="radio" name="mes" value="1">enero <br>
+        <input type="radio" name="mes" value="2">febrero <br>
+        <input type="radio" name="mes" value="3">marzo <br>
+        <br><br>
+        <label for="pwd">Password:</label> 
+        <input type="password" name="" id="">
+        <br><br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required> 
+        <input type="submit" value="enviar">
+    </form>
+</body>
+</html>
