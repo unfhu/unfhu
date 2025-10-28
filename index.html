@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Bomberman</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="panel">
+        <h1>Mini Bomberman</h1>
+        <p>
+          Usa las flechas del teclado o WASD para mover al personaje y la barra
+          espaciadora para plantar una bomba. Las bombas destruyen bloques
+          quebradizos y otorgan puntos. Si te alcanza la explosión pierdes.
+        </p>
+        <ul>
+          <li><strong>Meta:</strong> Consigue la máxima puntuación en 2 minutos.</li>
+          <li><strong>Paredes grises:</strong> indestructibles.</li>
+          <li><strong>Bloques anaranjados:</strong> destrúyelos para sumar puntos.</li>
+          <li><strong>Reinicio:</strong> presiona la tecla <kbd>R</kbd>.</li>
+        </ul>
+        <p class="status" id="status"></p>
+      </section>
+      <canvas id="game" width="416" height="416" aria-label="Tablero del juego"></canvas>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
